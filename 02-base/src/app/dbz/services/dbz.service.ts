@@ -12,7 +12,7 @@ export class DbzService {
         {id: uuid(), name:'Goku', power:9500},
     ];
 
-    onNewCharacter(character:Character):void{
+    addCharacter(character:Character):void{
         character.id = uuid();
         this.characters.push(character);
     }
