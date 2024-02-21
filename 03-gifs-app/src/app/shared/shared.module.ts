@@ -1,14 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { LazyImageComponent } from './components/LazyImage/LazyImage.component';
 
 @NgModule({
   declarations: [
-    SidebarComponent
+    SidebarComponent, 
+    LazyImageComponent
   ],
   imports: [
     CommonModule
   ], 
-  exports:[SidebarComponent]
+  exports:[
+    SidebarComponent,
+    LazyImageComponent
+  ]
 })
 export class SharedModule { }
